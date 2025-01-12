@@ -1,0 +1,27 @@
+# LLaMA 2 Model Configuration
+
+model_name: "LLaMA 2"
+variants:
+  - name: "7B"
+    parameters:
+      num_layers: 32
+      num_heads: 32
+      hidden_size: 4096
+      seq_length: 2048
+      dtype_bytes: 2  # FP16
+      
+  - name: "13B"
+    parameters:
+      num_layers: 40
+      num_heads: 40
+      hidden_size: 5120
+      seq_length: 2048
+      dtype_bytes: 2
+      
+  - name: "70B"
+    parameters:
+      num_layers: 80
+      num_heads: 64
+      hidden_size: 8192
+      seq_length: 2048
+      dtype_bytes: 2

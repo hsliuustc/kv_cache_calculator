@@ -1,0 +1,60 @@
+models:
+  - name: GPT-3
+    description: OpenAI's GPT-3 model
+    variants:
+      - name: 175B
+        num_layers: 96
+        hidden_size: 12288
+        num_attention_heads: 96
+      - name: 6.7B
+        num_layers: 32
+        hidden_size: 4096
+        num_attention_heads: 32
+
+  - name: Qwen
+    description: Qwen models by Alibaba Cloud
+    variants:
+      - name: 7B
+        num_layers: 32
+        hidden_size: 4096
+        num_attention_heads: 32
+      - name: 14B
+        num_layers: 40
+        hidden_size: 5120
+        num_attention_heads: 40
+      - name: 72B
+        num_layers: 80
+        hidden_size: 8192
+        num_attention_heads: 64
+
+  - name: Mixtral
+    description: Mixture of Experts model by Mistral AI
+    variants:
+      - name: 8x7B
+        num_layers: 32
+        hidden_size: 4096
+        num_attention_heads: 32
+        num_experts: 8
+        expert_capacity: 4096
+      - name: 8x22B
+        num_layers: 48
+        hidden_size: 6144
+        num_attention_heads: 48
+        num_experts: 8
+        expert_capacity: 6144
+
+  - name: LLaMA
+    description: Meta's LLaMA models
+    variants:
+      - name: 7B
+        num_layers: 32
+        hidden_size: 4096
+        num_attention_heads: 32
+      - name: 13B
+        num_layers: 40
+        hidden_size: 5120
+        num_attention_heads: 40
+      - name: 70B
+        num_layers: 80
+        hidden_size: 8192
+        num_attention_heads: 64
